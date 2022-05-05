@@ -11,12 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home:const HomePage()
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const HomePage());
   }
 }
 
@@ -25,18 +24,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Container(
+    return Scaffold(
+        body: Container(
       color: Colors.black,
-      height:MediaQuery.of(context).size.height,
-      width:MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
       child: Wrap(
-        children: const [
-          Animation1()
-        ],
+        children: const [Animation1(), Animation2(),Animation3(),TweenAnimation()],
       ),
     ));
   }
 }
-
-
-
