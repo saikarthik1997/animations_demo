@@ -30,7 +30,15 @@ class HomePage extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       child: Wrap(
-        children: const [Animation1(), Animation2(),Animation3(),TweenAnimation()],
+        children: const [
+          Animation1(),
+          Animation2(),
+          Animation3(),
+          TweenAnimation(),
+          XYZTransition(),
+          BuilderAnimation(),
+          RotatingSquare()
+        ],
       ),
     ));
   }
